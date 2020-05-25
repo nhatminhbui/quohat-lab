@@ -1,7 +1,7 @@
 #-------------------------------
 # General Site Settings
 
-title: Parsa | Portfolio Jekyll Template
+title: Quohat Vellichor
 logo: logo.png # You can add own logo
 description: # Add your awesome description
 baseurl: "" # The subpath of your site, e.g. /blog
@@ -51,11 +51,11 @@ author:
 #-------------------------------
 # Contact Info
 contact:
-  email: example@ymail.com
-  phone: +90 000 333 22
+  email: vellichor@email.com
+  phone: +84 984 7255 48
   address:
-    city: Sydney
-    street: 6 rip carl Avenue CA 90733
+    city: Dong Nai
+    street: Trang Bom
 
 # Contact Form
 contact-form: example@ymail.com
@@ -73,7 +73,7 @@ disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
 
 #-------------------------------
 # Instagram Feed
-instafeed: true # To enable the instafeed, use the value true. To turn off use the value false.
+instafeed: false # To enable the instafeed, use the value true. To turn off use the value false.
 userID: 4044026246
 accessToken: 4044026246.1677ed0.8896752506ed4402a0519d23b8f50a17
 
