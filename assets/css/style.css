@@ -13,7 +13,7 @@ VERSION:	Versoin Number
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700,400&display=swap');
 
 @font-face {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat script=all rev=1', sans-serif;
   /*src: url("../plugins/fonts/hanskendrick-regular-webfont.woff") format("woff");*/
   font-style: normal;
   font-display: swap;
@@ -36,7 +36,7 @@ p, .paragraph {
 
 h1, h2, h3, h4, h5, h6 {
   color: #000000;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat script=all rev=1';
   font-weight: 700;
   line-height: 1.2;
 }
@@ -354,7 +354,7 @@ a:hover, a.text-dark:hover {
 }
 
 .font-secondary {
-  font-family: 'Montserrat' !important;
+  font-family: 'Montserrat script=all rev=1' !important;
 }
 
 .mb-10 {
@@ -588,7 +588,7 @@ textarea.form-control {
 }
 
 .pagination .page-item .page-link {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat script=all rev=1';
   font-size: 30px;
   border: 0;
   color: #585757;
