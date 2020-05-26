@@ -37,7 +37,7 @@ p, .paragraph {
 h1, h2, h3, h4, h5, h6 {
   color: #000000;
   font-family: 'Montserrat';
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.2;
 }
 
@@ -84,7 +84,7 @@ h6, .h6 {
   text-transform: capitalize;
   padding: 8px 20px;
   border-radius: 0;
-  font-weight: 600;
+  font-weight: 700;
   border: 1px solid;
   position: relative;
   z-index: 1;
@@ -808,7 +808,7 @@ blockquote {
   color: #000000;
   background: #fdefe6;
   padding: 20px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .content * {
