@@ -852,12 +852,8 @@ blockquote {
   color: #5511ce;
 }
 
-.img-fluid w-100 mb-4 {
-    width: 250px;
-    height: 250px;
-    border-radius: 100%;
-    background: #eee no-repeat center;
-    background-size: cover;
+.container {
+  max-width: 800px;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
