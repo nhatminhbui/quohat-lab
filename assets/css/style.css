@@ -101,13 +101,13 @@ h6, .h6 {
 }
 
 .btn-primary {
-  background: #5c00ff;
+  background: #5511ce;
   color: #fff;
   border: 0;
 }
 
 .btn-primary:active {
-  background: #5c00ff !important;
+  background: #5511ce !important;
 }
 
 .btn-primary:hover {
@@ -132,7 +132,7 @@ h6, .h6 {
 }
 
 .btn-transparent {
-  color: #5c00ff;
+  color: #5511ce;
   border: 0;
 }
 
@@ -181,7 +181,7 @@ body {
   height: 16px;
   top: 12px;
   left: 15px;
-  background: #5c00ff;
+  background: #5511ce;
   border-radius: 50%;
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -204,7 +204,7 @@ body {
   width: 16px;
   height: 16px;
   margin-left: 16px;
-  background: #5c00ff;
+  background: #5511ce;
   border-radius: 50%;
 }
 
@@ -267,7 +267,7 @@ select:focus {
 }
 
 a:hover, a.text-dark:hover {
-  color: #5c00ff !important;
+  color: #5511ce !important;
 }
 
 .slick-slide {
@@ -334,7 +334,7 @@ a:hover, a.text-dark:hover {
 }
 
 .bg-primary {
-  background: #5c00ff !important;
+  background: #5511ce !important;
 }
 
 .bg-secondary {
@@ -342,7 +342,7 @@ a:hover, a.text-dark:hover {
 }
 
 .text-primary {
-  color: #5c00ff !important;
+  color: #5511ce !important;
 }
 
 .text-color {
@@ -414,7 +414,7 @@ a:hover, a.text-dark:hover {
 .form-control:focus {
   outline: 0;
   box-shadow: none;
-  border-color: #5c00ff;
+  border-color: #5511ce;
 }
 
 textarea.form-control {
@@ -513,7 +513,7 @@ textarea.form-control {
 
 .navbar .dropdown-item:active {
   color: #fff;
-  background-color: #5c00ff;
+  background-color: #5511ce;
 }
 
 .search-icon {
@@ -650,7 +650,7 @@ textarea.form-control {
 }
 
 .instagram-post ul a:hover {
-  color: #5c00ff !important;
+  color: #5511ce !important;
 }
 
 .instagram-post:hover::before {
@@ -849,7 +849,7 @@ blockquote {
 }
 
 .tag-list li a:hover {
-  color: #5c00ff;
+  color: #5511ce;
 }
 
 .img-fluid w-100 mb-4 {
