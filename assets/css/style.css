@@ -15,7 +15,7 @@ VERSION:	Versoin Number
 @font-face {
   font-family: 'Montserrat', sans-serif;
   /*src: url("../plugins/fonts/hanskendrick-regular-webfont.woff") format("woff");*/
-  font-style: normal;
+  font-style: bold;
   font-display: swap;
 }
 
