@@ -14,7 +14,7 @@ VERSION:	Versoin Number
 
 @font-face {
   font-family: 'Montserrat', sans-serif;
-  src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet);
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet");
   /*src: url("../plugins/fonts/hanskendrick-regular-webfont.woff") format("woff");*/
   font-style: normal;
   font-display: swap;
