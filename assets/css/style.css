@@ -407,7 +407,7 @@ a:hover, a.text-dark:hover {
 
 .form-control {
   border: 0;
-  border-bottom: 1px solid #ababab;
+  border-bottom: 0px solid #ababab;
   border-radius: 0;
 }
 
@@ -821,7 +821,7 @@ blockquote {
 
 .widget:not(:last-child) {
   margin-bottom: 30px;
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 0px solid #f4f4f4;
 }
 
 .search-box {
