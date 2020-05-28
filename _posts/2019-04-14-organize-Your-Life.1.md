@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Organize Your Life With 10 Simple rule"
+title: "OMG"
 date: 2019-04-14 14:46:10 +03:00
 description: "This is meta description"
 featured: true
