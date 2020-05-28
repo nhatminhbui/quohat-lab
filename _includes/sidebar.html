@@ -9,10 +9,6 @@
 
   <div class="widget">
     <h4 class="mb-4">TÁC GIẢ</h4>
-    <img class="img-author" src="{{site.baseurl}}/{% post.authoravatar %}" alt="{% post.title %}">
-    <h5>{% post.author %}</h5>
-    <h6>{% post.authordescription %}</h6>
-    
     {% for post in site.posts limit:3 %}
     <div class="media mb-4">
       <div class="post-thumb-sm mr-3">
