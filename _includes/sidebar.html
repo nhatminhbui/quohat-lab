@@ -9,8 +9,8 @@
 
   <div class="widget">
     <h5 class="mb-4">TÁC GIẢ</h5>
-        <img class="img-author" src="{{page.authorimage}}" style="width:128px;">
-        <p><h6> {{ page.author }} </h6></p>
+        <img class="img-author" src="{{page.authoravatar}}" style="width:128px;">
+        <h6> {{ page.author }} </h6><br>
         <p>{{ page.authordescription }}</p>
 
     {% for post in site.posts limit:3 %}
