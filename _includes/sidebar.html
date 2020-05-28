@@ -9,6 +9,11 @@
 
   <div class="widget">
     <h4 class="mb-4">TÁC GIẢ</h4>
+
+    {% if post %}
+      {% assign authorx = post.author %}
+
+    <h5>{{authorx}}</5>
     {% for post in site.posts limit:3 %}
     <div class="media mb-4">
       <div class="post-thumb-sm mr-3">
