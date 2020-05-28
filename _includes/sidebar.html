@@ -9,9 +9,23 @@
 
   <div class="widget">
     <h5 class="mb-4">TÁC GIẢ</h5>
-        <img class="img-author" src="{{page.authoravatar}}" style="width:128px;">
-        <h6> {{ page.author }} </h6><br>
-        <p>{{ page.authordescription }}</p>
+        <div class="author">
+            <img class="img-author" src="{{page.authoravatar}}" style="width:128px;">
+            <h6> {{ page.author }} </h6><br>
+                {{ page.authordescription }}
+        </div>
+        <a href="{{ page.authorcontact }}" class="author-contact">Liên hệ</a>
+        <style>
+            a.author-contact {
+            -webkit-appearance: button;
+            -moz-appearance: button;
+            appearance: button;
+
+            background-color: #5511ce;
+            color: #ffffff;
+            border-radius: 5px;
+            }
+        </style>
 
     {% for post in site.posts limit:3 %}
     <div class="media mb-4">
