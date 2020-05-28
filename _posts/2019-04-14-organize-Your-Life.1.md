@@ -12,7 +12,7 @@ tags:
   - "Photos"
 author: "Nhat Bui"
 authordescription: "Aha"
-authoravatar: "assets/images/featured-post/post-2.jpg"
+authoravatar: "nhatminhbui.github.io/assets/images/featured-post/post-2.jpg"
 ---
 
 
