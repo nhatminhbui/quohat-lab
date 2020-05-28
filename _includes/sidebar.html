@@ -8,8 +8,13 @@
   </div>
 
   <div class="widget">
-    <h4 class="mb-4">TÁC GIẢ</h4>
-        {{ page.author }}
+    <h5 class="mb-4">TÁC GIẢ</h5>
+    <center>
+        <img class="img-author" src="{{site.baseurl}}/{{page.authorimage}}" alt="author" style="width:128px;">
+        <p><h6> {{ page.author }} </h6></p>
+        {{ page.authordescription }}
+    </center>
+
     {% for post in site.posts limit:3 %}
     <div class="media mb-4">
       <div class="post-thumb-sm mr-3">
