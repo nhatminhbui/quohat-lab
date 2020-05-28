@@ -5,11 +5,14 @@ date: 2019-04-14 14:46:10 +03:00
 description: "This is meta description"
 featured: true
 image: "assets/images/featured-post/post-2.jpg"
-categories: 
+categories:
   - "Philosophy"
 tags:
   - "Philosophy"
   - "Photos"
+author: "Nhat Bui"
+authordescription: "Aha"
+authoravatar: "assets/images/featured-post/post-2.jpg"
 ---
 
 
@@ -53,5 +56,3 @@ dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur au
 consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
 ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
 labore et dolore magnam aliquam quaerat voluptatem.
-
-
