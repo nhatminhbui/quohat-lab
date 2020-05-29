@@ -10,7 +10,6 @@ categories:
 tags:
   - "Philosophy"
   - "Photos"
-
 courseurl: "https://instagram.com/minhnhatwtf"
 author: "Nhat Bui"
 authordescription: "Aha"
