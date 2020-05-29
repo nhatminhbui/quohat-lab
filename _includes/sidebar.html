@@ -88,20 +88,11 @@
               </style>
     </div>
 
-  <div class="widget">
     <h5 class="mb-4">DANH MỤC</h5>
-    <ul class="list-inline tag-list">
-      {% if post %}
-        {% assign categories = post.categories %}
-      {% else %}
-        {% assign categories = page.categories %}
-      {% endif %}
-      {% assign category = site.categories %}
-      {% for category in categories %}
-      <li class="list-inline-item m-1"><a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a></li>
-      {% unless forloop.last %}&nbsp;{% endunless %}
-      {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
+    <a class='cate' href="{{site.baseurl}}categories/#{{page.category}}"> #{{ page.category }}</a>
+    <style>
+        a.cate {
+            color: #000;
+        }
+    </style>
 </div>

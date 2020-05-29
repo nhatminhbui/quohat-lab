@@ -5,11 +5,8 @@ date: 2019-04-14 14:46:10 +03:00
 description: "This is meta description"
 featured: true
 image: "assets/images/featured-post/post-2.jpg"
-categories:
+category:
   - "Philosophy"
-tags:
-  - "Philosophy"
-  - "Photos"
 courseurl: "https://instagram.com/minhnhatwtf"
 author: "Nhat Bui"
 authordescription: "Aha"
