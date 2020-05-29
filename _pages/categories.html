@@ -27,20 +27,18 @@ title: Categories
           {% for post in site.categories[category_name] %}
           <div class="col-sm-6 mb-5">
             <a name="{{ category_name | slugize }}"></a>
+
             <article class="text-center">
               <img class="img-fluid mb-4" src="{{site.baseurl}}/{{post.image}}" alt="{{post.title}}">
               <p class="text-uppercase mb-2">{{ category_name }}</p>
-              <h4 class="title-border"><a class="text-dark" href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></h4>
-              <p>{{ post.content | strip_html | truncatewords: 35 }}</p>
-              <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-transparent">read more</a>
+              <h5 class="title-border"><a class="text-dark" href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></h5>
             </article>
           </div>
           {% endfor %}
           {% endfor %}
         </div>
       </div>
-      <!-- /blog post -->
-      {% include sidebar.html %}
+
       </div>
     </div>
   </div>
