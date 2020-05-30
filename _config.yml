@@ -3,7 +3,7 @@
 
 title: Quohat Learning Lab
 logo: logo.svg # You can add own logo
-description: # Add your awesome description
+description: Nền tảng học trực tuyến miễn phí.
 baseurl: "" # The subpath of your site, e.g. /blog
 url: "" # The base hostname & protocol for your site, e.g. http://example.com
 
@@ -14,11 +14,11 @@ menu:
   - url: /
     name: Home
   - url: /about/
-    name: About
+    name: Về chúng tôi
   - url: /categories/
-    name: Categories
+    name: Khóa học
   - url: /contact/
-    name: Contact
+    name: Liên hệ
 
 # *** NOTE ***
 # You can add submenus. For example:
