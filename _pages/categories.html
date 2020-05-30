@@ -42,7 +42,7 @@ title: Categories
         {% for category in site.categories %}
             {% capture category_name %}{{ category | first }}{% endcapture %}
             <div id="#{{ category_name | slugize }}"></div>
-            <h4 class="category-head">#{{ category_name }}</h4>
+            <a class="category-list" href="{{ site.baseurl }}/categories/#{{ category_name }}">#{{ category_name }}</a>
         {% endfor %}
     </div>
 </div>
@@ -51,17 +51,25 @@ title: Categories
     a.post-title {
         color: #000;
     }
+    a.category-list {
+        color: #000;
+        font-family: 'Montserrat';
+        font-size: 20px;
+    }
 
     .column {
       float: left;
     }
-    .left {
-      width: 60%;
+    #left {
+      width: 70%;
     }
-    .center {
-        width: 10%;
+
+    #center {
+      width: 5%
     }
-    .right {
+
+    #right {
       width: 20%;
+      padding: 200px 10px 10px 10px;
     }
 </style>
