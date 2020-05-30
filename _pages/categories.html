@@ -14,8 +14,8 @@ title: Categories
   </div>
 </section>
 <!-- /page-title -->
-<div class="row">
-     <div class="column">
+<div class="row" id="categories">
+     <div class="column" id="left">
         <div id="archives">
         {% for category in site.categories %}
           <div class="archive-group">
@@ -36,8 +36,9 @@ title: Categories
         </div>
     </div>
 
+    <div class="column" id="center">
 
-    <div class="column">
+    <div class="column" id="right">
         {% for category in site.categories %}
             {% capture category_name %}{{ category | first }}{% endcapture %}
             <div id="#{{ category_name | slugize }}"></div>
@@ -55,9 +56,12 @@ title: Categories
       float: left;
     }
     .left {
-      width: 70%;
+      width: 60%;
+    }
+    .center {
+        width: 10%;
     }
     .right {
-      width: 30%;
+      width: 20%;
     }
 </style>
