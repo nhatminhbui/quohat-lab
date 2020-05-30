@@ -99,6 +99,7 @@ layout: default
 <!-- /hero area -->
 
 <section class="section">
+<<<<<<< HEAD
     <section class="content">
              <main class="home" id="post" role="main">
                  <h1 class="title-category">/{{page.title}}</h1>
@@ -158,6 +159,38 @@ layout: default
                  </div>
              </main>
          </section>
+=======
+  <div class="container">
+      <div class="content">
+      <ul>
+          {% assign next_posts = site.posts | where_exp:"post","post.is_generated != true" | where_exp:"post","post.path != page.path" %}
+          {% assign shuffled_array = next_posts | shuffle %}
+          {% for post in shuffled_array limit:2 %}
+              <li>
+                  <a href="{{ post.url | prepend: site.baseurl }}">
+                      <figure>
+                          {% if post.optimized_image %}
+                              <img src="{{ post.optimized_image }}">
+                          {% elsif post.image %}
+                              <img src="{{ post.image }}">
+                          {% else %}
+                              <img src="/assets/img/off.jpg">
+                          {% endif %}
+                      </figure>
+                      <h3>{{ post.title }}</h3>
+                      <p>{{ post.description }}</p>
+                  </a>
+              </li>
+          {% endfor %}
+      </ul>
+  </div>
+      </div>
+			{% endfor %}
+			{% endif %}
+    </div>
+    {% include pagination.html %}
+  </div>
+>>>>>>> 8c622b6de47b552d7c53a0cc335963bff6899e6c
 </section>
 
 
