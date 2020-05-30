@@ -14,23 +14,49 @@ title: Categories
   </div>
 </section>
 <!-- /page-title -->
+<div class="row">
+     <div class="column">
+        <div id="archives">
+        {% for category in site.categories %}
+          <div class="archive-group">
+            {% capture category_name %}{{ category | first }}{% endcapture %}
+            <div id="#{{ category_name | slugize }}"></div>
+            <p><br><br></p>
+
+            <h4 class="category-head">#{{ category_name }}</h4>
+            <a name="{{ category_name | slugize }}"></a>
+            {% for post in site.categories[category_name] %}
+            <article class="archive-item">
+              <h5><a class='post-title' href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h5>
+              <p class='post-description'>{{post.description}}<br></p>
+            </article>
+            {% endfor %}
+          </div>
+        {% endfor %}
+        </div>
+    </div>
 
 
-<div id="archives">
-{% for category in site.categories %}
-  <div class="archive-group">
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-    <div id="#{{ category_name | slugize }}"></div>
-    <p><br><br></p>
-
-    <h4 class="category-head">#{{ category_name }}</h4>
-    <a name="{{ category_name | slugize }}"></a>
-    {% for post in site.categories[category_name] %}
-    <article class="archive-item">
-      <h5><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h5>
-      <p class='post-description'>{{post.description}}<br></p>
-    </article>
-    {% endfor %}
-  </div>
-{% endfor %}
+    <div class="column">
+        {% for category in site.categories %}
+            {% capture category_name %}{{ category | first }}{% endcapture %}
+            <div id="#{{ category_name | slugize }}"></div>
+            <h4 class="category-head">#{{ category_name }}</h4>
+    </div>
 </div>
+
+<style>
+    a.post-title {
+        color: #000;
+    }
+
+    .column {
+      float: left;
+    }
+    .left {
+      width: 70%;
+    }
+    .right {
+      width: 30%;
+    }
+</style>
