@@ -13,10 +13,10 @@ preloader: true # To disable preloader change value to false
 menu:
   - url: /
     name: Home
+  - url: /categories/
+    name: <b>Khóa học</b>
   - url: /about/
     name: Về chúng tôi
-  - url: /categories/
-    name: Khóa học
   - url: /contact/
     name: Liên hệ
 
