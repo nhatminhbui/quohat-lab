@@ -100,24 +100,29 @@ layout: default
 
 <section class="section">
   <div class="container">
-    <div class="row masonry-container">
-			{% if site.posts.size > 0 %}
-			{% for post in paginator.posts %}
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <article class="text-center">
-					<img class="img-fluid mb-4" src="{{site.baseurl}}/{{post.image}}" alt="{{post.title}}">
-					{% if post %}
-						{% assign categories = post.categories %}
-					{% else %}
-					{% assign categories = page.categories %}
-					{% endif %}
-					{% for category in categories %}
-					<p class="text-uppercase mb-2">{{category}}</p>
-					{% endfor %}
-          <h4 class="title-border"><a class="text-dark" href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></h4>
-          <p>{{ post.content | strip_html | truncatewords: 35 }}</p>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-transparent">read more</a>
-        </article>
+      <div class="content">
+      <ul>
+          {% assign next_posts = site.posts | where_exp:"post","post.is_generated != true" | where_exp:"post","post.path != page.path" %}
+          {% assign shuffled_array = next_posts | shuffle %}
+          {% for post in shuffled_array limit:2 %}
+              <li>
+                  <a href="{{ post.url | prepend: site.baseurl }}">
+                      <figure>
+                          {% if post.optimized_image %}
+                              <img src="{{ post.optimized_image }}">
+                          {% elsif post.image %}
+                              <img src="{{ post.image }}">
+                          {% else %}
+                              <img src="/assets/img/off.jpg">
+                          {% endif %}
+                      </figure>
+                      <h3>{{ post.title }}</h3>
+                      <p>{{ post.description }}</p>
+                  </a>
+              </li>
+          {% endfor %}
+      </ul>
+  </div>
       </div>
 			{% endfor %}
 			{% endif %}
