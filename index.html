@@ -79,8 +79,8 @@ layout: default
 <section class="hero-section">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 align-self-end">
-        <h1 class="mb-0">Chào mừng bạn</h1>
+      <div class="col-lg-6 align-self-end" id="title-left">
+        <h2 class="mb-0">Chào mừng bạn</h2>
         <h2 class="mb-100 title-border-lg">đến <i>{{site.author.name}}</i></h2>
         <p class="mb-80 mr-5">{{site.hero.hero-subtitle}}</p>
         <span class="font-secondary text-dark mr-3 mr-sm-5">Follow</span>
@@ -90,11 +90,20 @@ layout: default
           {% endfor %}
         </ul>
       </div>
-      <div class="col-lg-6 text-right">
+      <div class="col-lg-6 text-right" id="img-right">
         <img class="img-fluid" src="{{site.baseurl}}/assets/images/{{site.hero.hero-banner}}" alt="banner-image">
       </div>
     </div>
   </div>
+
+<style>
+    #image-right {
+        width: 40%;
+    }
+    #title-left {
+        width: 60%;
+    }
+</style>
 </section>
 <!-- /hero area -->
 
@@ -121,7 +130,7 @@ layout: default
             </ul>
             <h4 class="mb-4"><a href="{{ post.url | prepend: site.baseurl }}" class="text-dark">{{post.title}}</a></h4>
             <p class="mb-0 post-summary">{{ post.content | strip_html | truncatewords: 35 }}</p>
-            <a class="btn btn-transparent mb-4" href="{{ post.url | prepend: site.baseurl }}">Continue...</a>
+            <a class="btn btn-transparent mb-4" href="{{ post.url | prepend: site.baseurl }}"><b>Đọc tiếp...</b></a>
           </div>
         </article>
       </div>
