@@ -72,6 +72,9 @@ layout: default
 {% else %}
 
 
+<!-- ============================================= -->
+
+
 <!-- hero area -->
 <section class="hero-section">
   <div class="container">
@@ -95,8 +98,37 @@ layout: default
 </section>
 <!-- /hero area -->
 
-<!-- blog post -->
 <section class="section">
+  <div class="container">
+    <div class="row masonry-container">
+			{% if site.posts.size > 0 %}
+			{% for post in paginator.posts %}
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <article class="text-center">
+					<img class="img-fluid mb-4" src="{{site.baseurl}}/{{post.image}}" alt="{{post.title}}">
+					{% if post %}
+						{% assign categories = post.categories %}
+					{% else %}
+					{% assign categories = page.categories %}
+					{% endif %}
+					{% for category in categories %}
+					<p class="text-uppercase mb-2">{{category}}</p>
+					{% endfor %}
+          <h4 class="title-border"><a class="text-dark" href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></h4>
+          <p>{{ post.content | strip_html | truncatewords: 35 }}</p>
+          <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-transparent">read more</a>
+        </article>
+      </div>
+			{% endfor %}
+			{% endif %}
+    </div>
+    {% include pagination.html %}
+  </div>
+</section>
+
+
+<!-- blog post -->
+<!-- <section class="section">
   <div class="container">
     <div class="row">
       {% if site.posts.size > 0 %}
