@@ -5,8 +5,9 @@ permalink: /about/
 image: author.jpg
 ---
 <style>
-.container {
+.col-lg-12 {
   max-width: 800px;
+  margin: auto;
 }
 </style>
 
