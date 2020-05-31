@@ -17,8 +17,8 @@ menu:
     name: <b>Khóa học</b>
   - url: /about/
     name: Về chúng tôi
-  - url: /contact/
-    name: Liên hệ
+#  - url: /contact/
+#    name: Liên hệ
 
 # *** NOTE ***
 # You can add submenus. For example:
@@ -52,7 +52,7 @@ author:
 # Contact Info
 contact:
   email: learninglab@email.com
-  phone: +84 984 7255 48
+  #phone: +84 984 7255 48
   address:
     city: Dong Nai
     street: Trang Bom
