@@ -1,3 +1,13 @@
+@font-face{
+    font-family:'Latin-Sans';
+    src:url("font/lmss-regular.otf");src:local("☺"),url("font/lmss-regular.otf") format("otf"), url("font/lmss-regular.otf") format("truetype"),url("font/lmss-regular.otf") format("otf");
+    font-style:normal}
+
+@font-face{
+    font-family:'Latin-Sans-Bold';
+    src:url("font/lmss-bold.otf");src:local("☺"),url("font/lmss-bold.otf") format("otf"), url("font/lmss-bold.otf") format("truetype"),url("font/lmss-bold.otf") format("otf");
+    font-style:bold}
+
 
 a:link {
 	color: #00a;
@@ -6,7 +16,7 @@ a:link {
 }
 
 a:visited {
-	color: #808;
+	color: #00a;
 	text-decoration: none;
 	border-bottom: 1px dotted #b8b;
 }
@@ -23,24 +33,43 @@ a:active {
 }
 
 body {
-	font-family: Lato, Sans-serif;
+    font-family: 'Latin-Sans', sans-serif;
 	font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    font-variant-numeric: oldstyle-nums;
 }
 
 h1 {
-	font-weight: 900;
+	font-weight: 400;
+    font-family: 'Latin-Sans-Bold', sans-serif;
+    font-size: 36px;
+    line-height: 150%;
 }
 
 h2 {
 	font-weight: 700;
+    font-family: 'Latin-Sans-Bold', sans-serif;
+    font-variant-numeric: oldstyle-nums;
 }
 
 h3 {
-	font-weight: 700;
+	font-weight: 400;
+    font-family: 'Latin-Sans-Bold', sans-serif;
+    font-size: 26px;
+    font-variant-numeric: oldstyle-nums;
 }
 
 b {
-	font-weight: 700;
+	font-weight: 400;
+    font-family: 'Latin-Sans-Bold', sans-serif;
+    font-variant-numeric: oldstyle-nums;
+}
+
+small{
+    font-size: 14px;
+    line-height: 130%;
+    font-variant-numeric: oldstyle-nums;
 }
 
 td {
